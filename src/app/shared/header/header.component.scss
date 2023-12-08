@@ -1,0 +1,21 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--elements);
+    height: 10vh;
+    padding: 0 4rem;
+
+    a {
+        text-decoration: none;
+        color: var(--text);
+        font-weight: bold;
+    }
+
+    button {
+        background-color: transparent;
+        color: var(--text);
+        border: none;
+        cursor: pointer;
+    }
+}

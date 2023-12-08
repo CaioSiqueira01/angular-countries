@@ -6,7 +6,7 @@ import { RoutingModule } from './routing.module';
 
 
 //Module
-
+import { SharedModule } from '../shared/shared.module';
 
 //Pages
 import { HomeComponent } from './home/home.component';
@@ -21,6 +21,7 @@ import { CountryComponent } from './country/country.component';
   imports: [
     CommonModule,
     RoutingModule,
+    SharedModule
   ]
 })
 export class PagesModule { }
