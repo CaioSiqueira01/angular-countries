@@ -1,10 +1,11 @@
 header {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    gap: 2rem;
     align-items: center;
     background-color: var(--elements);
     height: 10vh;
-    padding: 0 4rem;
+    box-shadow: rgba(0, 0, 0, 0.06) 0px 0px 1rem 1px;;
 
     a {
         text-decoration: none;

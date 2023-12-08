@@ -2,7 +2,11 @@
 @import "./config-scss/reset.scss";
 @import "./config-scss/variables.scss";
 
-html {
+* {
     font-family: 'Nunito Sans', sans-serif;
     background-color: var(--background);
+}
+
+body {
+    height: 100vh;
 }
