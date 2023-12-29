@@ -60,6 +60,12 @@
 
             p {
                 background-color: var(--card);
+                font-weight: bold;
+
+                span {
+                    background-color: var(--card);
+                    font-weight: 400;
+                }
             }
         }
     }
