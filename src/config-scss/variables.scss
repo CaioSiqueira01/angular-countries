@@ -3,6 +3,7 @@
     --background: hsl(207, 26%, 17%);
 	--elements: hsl(209, 23%, 22%);
     --input: hsl(209, 23%, 22%);
+    --card: rgb(43,57,69);
 }
 
 :root .light-theme {
@@ -10,4 +11,5 @@
     --background: hsl(0, 0%, 98%);
     --elements: hsl(0, 0%, 100%);
     --input: hsl(0, 0%, 52%);
+    --card: rgb(255,255,255)
 }
