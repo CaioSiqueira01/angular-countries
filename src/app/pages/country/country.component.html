@@ -1,1 +1,22 @@
-<p>country works!</p>
+<app-header></app-header>
+
+<main>
+    <button><a [routerLink]="['/']">Back</a></button>
+
+    <div class="country">
+        <img src="{{countryDetails.flags.svg}}" alt="{{countryDetails.name.common}}'s flag">
+
+        <div class="country-details">
+            <div>
+                <h2>{{countryDetails.name.common}}</h2>
+                <p>Population: <span>{{countryDetails.population.toLocaleString()}}</span></p>
+                <p>Region: <span>{{countryDetails.region}}</span></p>
+                <p>Sub Region: <span>{{countryDetails.subregion}}</span></p>
+                <p>Capital: <span>{{countryDetails.capital}}</span></p>
+                <p>Top Level Domain: <span>{{countryDetails.tld}}</span></p>
+                <p>Currencies: <span>{{ getCurrenciesString() }}</span></p>
+                <p>Languages: <span>{{ getLanguagesString() }}</span></p>
+            </div>
+        </div>
+    </div>
+</main>

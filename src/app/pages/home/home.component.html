@@ -13,7 +13,7 @@
 </div>
 
 <div class="cards">
-    <a class="card" *ngFor="let country of countries">
+    <a class="card" *ngFor="let country of countries" [routerLink]="['country', country.name.common]">
         <img src="{{ country.flags.svg }}" alt="{{country.flags.alt}}">
         <div class="country-details">
             <p>{{country.name.common}}</p>

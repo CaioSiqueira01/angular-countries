@@ -1,0 +1,110 @@
+main {
+    display: flex;
+    margin: 2rem 1.5rem;
+    flex-direction: column;
+    
+    button {
+        width: 29%;
+        a {
+            text-decoration: none;
+          
+            background-color: var(--elements);
+            color: var(--text);
+            box-shadow: rgba(0, 0, 0, 0.06) 0px 0px 1rem 1px;
+            border-radius: 0.1rem;
+            padding: 0.35rem 1.5rem;
+            border: none;
+            font-size: 0.875rem;
+            cursor: pointer;
+            display: flex;
+            -webkit-box-align: center;
+            align-items: center;
+            gap: 0.5rem;
+            
+            &:hover {
+                background-color: var(--text);
+                color: var(--elements);
+            }
+        }
+    }
+
+    .country {
+        margin-top: 4rem;
+        display: flex;
+        flex-direction: column;
+        gap: 2.5rem;
+
+        img {
+            width: 100%;
+            min-height: 60vw;
+        }
+
+        .country-details {
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+            
+            div {
+                h2 {
+                    font-size: 1.5rem;
+                    margin: 0rem 0px 1.5rem;
+                }
+
+                p {
+                    margin-bottom: 0.5rem;
+                    font-size: 0.875rem;
+                }
+
+                h2, p {
+                    font-weight: bold;
+                    color: var(--text);
+
+                    span {
+                        font-weight: 400;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 768px) {
+    main {
+        button {
+            width: 11%;
+        }
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    main {
+        padding: 3.5rem;
+
+        button {
+            width: 8%;
+        }
+
+        .country {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+
+            img {
+                width: 35vw;
+                min-height: 25vw;
+            }
+            .country-details {
+                display: flex;
+                justify-content: center;
+            }
+        }    
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    main {
+        button {
+            width: 6%;
+        }
+    }
+}
