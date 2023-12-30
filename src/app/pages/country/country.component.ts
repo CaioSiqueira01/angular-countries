@@ -1,4 +1,3 @@
-// country.component.ts
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { CountriesService } from 'src/app/services/countries.service';
@@ -10,7 +9,7 @@ import { CountriesService } from 'src/app/services/countries.service';
 })
 export class CountryComponent implements OnInit {
   countryDetails: any;
-
+  borderCountries: any[] = [];
   constructor(private route: ActivatedRoute, private service: CountriesService) {}
 
   ngOnInit(): void {

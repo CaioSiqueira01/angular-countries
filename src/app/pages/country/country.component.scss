@@ -1,8 +1,8 @@
 main {
     display: flex;
-    margin: 2rem 1.5rem;
+    padding: 2rem 1.5rem;
     flex-direction: column;
-    
+
     button {
         width: 29%;
         a {
@@ -65,6 +65,41 @@ main {
                 }
             }
         }
+
+        .borders {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            color: var(--text);
+            margin-bottom: 2rem;
+
+            p {
+                margin-bottom: 2rem;
+                font-weight: bold;
+            }
+
+            div {
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                gap: .8rem;
+                button {
+                    background-color: var(--elements);
+                    box-shadow: rgba(0, 0, 0, 0.06) 0px 0px 1rem 1px;
+                    border-radius: 0.1rem;
+                    padding: 0.35rem 1.5rem;
+                    border: none;
+                    font-size: 0.875rem;
+                    -webkit-box-align: center;
+                    color: var(--text);
+
+                    &:hover {
+                        background-color: var(--text);
+                        color: var(--elements);
+                    }
+                }
+            }
+        }
     }
 }
 
@@ -86,7 +121,7 @@ main {
 
         .country {
             display: flex;
-            flex-direction: row;
+            flex-direction: column;
             justify-content: space-between;
 
             img {

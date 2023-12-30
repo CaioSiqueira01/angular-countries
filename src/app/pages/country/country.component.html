@@ -17,6 +17,18 @@
                 <p>Currencies: <span>{{ getCurrenciesString() }}</span></p>
                 <p>Languages: <span>{{ getLanguagesString() }}</span></p>
             </div>
+
+        </div>
+        <div class="borders">
+            <p>Border Countries:</p>
+            <div *ngIf="countryDetails?.borders && countryDetails.borders.length > 0; else noBorders">
+                <button *ngFor="let borderCountry of countryDetails?.borders">
+                    {{ borderCountry }}
+                </button>
+            </div>
+            <ng-template #noBorders>
+                <p>None</p>
+            </ng-template>
         </div>
     </div>
 </main>

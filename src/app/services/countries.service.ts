@@ -21,8 +21,4 @@ export class CountriesService {
       map((countries: any[]) => countries.find((country: any) => country.name.common === name))
     );
   }
-
-  getCountryByCode(code: string): Observable<any> {
-    return this.http.get<any>(`${this.url}/alpha/${code}`);
-  }
 }
